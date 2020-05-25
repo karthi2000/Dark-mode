@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Dark mode</title>
+        <style>
+            .night
+            {
+                background: black;
+                color: white;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <button class="go_to_dark">Night Mode</button>&nbsp;<button class="go_to_light">Day Mode</button>
+        <br>
+        <h1>See the power of Darkness</h1> 
+    </body>
+    <script>
+        $('.go_to_dark').click(function()
+        {
+            $('body').addClass('night');
+        });
+        $('.go_to_light').click(function()
+        {
+            $('body').removeClass('night');
+        });
+    </script>
+
+</html>
